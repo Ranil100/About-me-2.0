@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./src/assets/images/logo .png" alt="Logo" width="100" height="100">
-  <h3 align="center">Rakibul Hossain's Developer Portfolio</h3>
+  <h3 align="center">Click the Link For About Me</h3>
   <p align="center">
     A stunning, interactive, and fully responsive personal portfolio built with modern web technologies.
     <br />
@@ -71,12 +71,6 @@ You need to have Node.js and npm (or yarn/pnpm) installed on your machine.
 - `/src/sections` - Major page sections (Hero, About, Tech, Experience, Projects)
 - `/src/components` - Reusable UI components (Buttons, Social Links, Nav)
 - `/src/assets` - Static assets (Images, SVGs, Fonts)
-
-## 📫 Contact
-
-Rakibul Hossain - [LinkedIn](https://www.linkedin.com/in/rakibdhali/) - [GitHub](https://github.com/Rakib-dhali)
-
-Project Link: [https://github.com/Rakib-dhali/rakib-dhali-portfolio](https://github.com/Rakib-dhali/rakib-dhali-portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
