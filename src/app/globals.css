@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;}
+button {
+  cursor:pointer;
+}
+
+@theme {
+  --font-inter: var(--font-inter);
+  --font-calistoga: var(--font-calistoga);
+
+  --animate-ping-large: ping-large 1s ease-in-out infinite;
+
+  @keyframes ping-large {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.8;
+    }
+
+    70% {
+      transform: scale(2.5);
+      opacity: 0.2;
+    }
+
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+@layer components {
+  .header {
+    @apply flex items-center justify-center fixed top-3 w-full z-20;
+    .nav {
+      @apply flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur;
+
+      .nav-item {
+        @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
+      }
+    }
+  }
+  .hero {
+    @apply py-32 md:py-48 lg:py-60 relative z-0 overflow-hidden;
+    .grain {
+      @apply absolute inset-0 -z-30 opacity-5;
+    }
+    .circle {
+      @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
+    }
+  }
+}
+
+.aw {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.al {
+  flex: 1;
+  min-width: 240px;
+  max-width: 320px;
+}
+
+.badge {
+  display: inline-block;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.2rem;
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin: 0 0 1.2rem;
+  color: var(--color-text-primary);
+}
+
+.bio {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.7rem;
+}
+
+.bio strong {
+  color: var(--color-text-primary);
+}
+
+.cta {
+  background: white;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 11px 28px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 0.6rem;
+  transition: opacity 0.2s;
+}
+
+.cta:hover {
+  opacity: 0.85;
+}
+
+.ic {
+  fill: var(--color-background-primary);
+  stroke: var(--color-border-secondary);
+  stroke-width: 0.5;
+}
+
+.cb {
+  fill: var(--color-background-primary);
+}
